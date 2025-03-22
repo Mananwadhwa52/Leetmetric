@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #212121;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Ubuntu", sans-serif;
+    padding: 2rem 2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: rgba(128, 128, 128, 0.074);
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    max-width: 600px;
+    min-width: 300px;
+    box-shadow: 4px 3px 1px green;
+    border: 2px solid green;
+}
+
+h1 {
+    align-self: center;
+    font-size: 3rem;
+}
+
+.user-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+}
+.user-container p {
+    font-size: 1.5rem;
+}
+.user-input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user-input-container p {
+    font-size: 1.5rem;
+}
+
+#user-input {
+    width: 75%;
+    font-size: 1.4rem;
+    padding: 0.2rem 1rem;
+    border-radius: 5px;
+}
+
+#search-btn {
+    width: 25%;
+    padding: 0.33rem 0rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+.circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid green;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: white;
+    font-weight: 700;
+    background: conic-gradient(#299f5d var(--progress-degree, 0%), #233128 0%)
+}
+
+.circle span {
+    position: relative;
+    z-index: 2;
+}
+
+.progress {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.progress-item div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.card {
+    width: 100%;
+    background-color: #299f5d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    color: black;
+    font-weight: 600;
+    border: 2px solid white;
+}
+
+#accpRate-value {
+    color: white;
+    font-weight: 600;
+}
+.stats-card {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+@media (max-width: 500px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 2rem;
+        padding: 2rem 1rem;
+    }
+    .container {
+        min-width: 300px;
+        margin: 0rem 2rem;
+    }
+    .circle {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    .container {
+        min-width: 300px;
+        margin: 0rem 0rem;
+    }
+    .circle {
+        width: 110px;
+        height: 110px;
+    }
+}
